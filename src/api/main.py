@@ -51,10 +51,10 @@ app.add_middleware(
 
 # Diretório do modelo
 MODEL_DIR = Path(__file__).parent.parent.parent / "data" / "models"
-MODEL_NAME = "lstm_5factor_final_20260101_224540.keras"
-SCALER_NAME = "scaler_5factor_final_20260101_224540.pkl"
-CONFIG_NAME = "config_5factor_final_20260101_224540.yaml"
-RESULTS_NAME = "results_5factor_final_20260101_224540.json"
+MODEL_NAME = "lstm_5factor_final_20260105_185821.keras"
+SCALER_NAME = "scaler_5factor_final_20260105_185821.pkl"
+CONFIG_NAME = "config_5factor_final_20260105_185821.yaml"
+RESULTS_NAME = "results_5factor_final_20260105_185821.json"
 
 # ===================== VARIÁVEIS GLOBAIS =====================
 

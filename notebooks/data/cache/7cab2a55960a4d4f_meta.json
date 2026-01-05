@@ -1,0 +1,22 @@
+{
+  "symbol": "RIVN",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:27:01.540074",
+  "rows": 1036,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "d6a92c1d81f0502b556bba8f10f32216",
+  "file_size_mb": 0.055328369140625,
+  "date_range": {
+    "first": "2021-11-10T14:30:00",
+    "last": "2025-12-26T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

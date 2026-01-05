@@ -1,0 +1,22 @@
+{
+  "symbol": "NIO",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:27:00.602388",
+  "rows": 1505,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "56c6ef8ea2524a158901726b1778049a",
+  "file_size_mb": 0.08037567138671875,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-26T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

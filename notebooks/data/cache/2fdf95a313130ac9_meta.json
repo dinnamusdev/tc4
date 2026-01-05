@@ -1,0 +1,22 @@
+{
+  "symbol": "TLT",
+  "start_date": "2020-01-01",
+  "end_date": "2025-12-31",
+  "downloaded_at": "2026-01-01T18:01:01.763788",
+  "rows": 1507,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "7953ae7b0fa81cc9d6f51678ab3f0e5e",
+  "file_size_mb": 0.08048248291015625,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-30T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

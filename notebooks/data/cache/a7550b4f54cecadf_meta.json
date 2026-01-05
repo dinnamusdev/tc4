@@ -1,0 +1,22 @@
+{
+  "symbol": "FSR",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:27:03.500080",
+  "rows": 1563,
+  "columns": [
+    "Close",
+    "Open",
+    "High",
+    "Low",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "a1be650d9cc7640b7a5a13f5d6315d2d",
+  "file_size_mb": 0.07751083374023438,
+  "date_range": {
+    "first": "2020-01-02T00:00:00",
+    "last": "2025-12-29T00:00:00"
+  },
+  "data_source": "realistic_generated"
+}

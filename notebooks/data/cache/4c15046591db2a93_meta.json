@@ -1,0 +1,22 @@
+{
+  "symbol": "^IXIC",
+  "start_date": "2020-01-01",
+  "end_date": "2025-12-31",
+  "downloaded_at": "2026-01-01T18:01:04.711335",
+  "rows": 1507,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "2712054baa12140267b7d26ffa150d6c",
+  "file_size_mb": 0.08048248291015625,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-30T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

@@ -1,0 +1,145 @@
+data_info:
+  end_date: '2025-12-31'
+  n_features: 34
+  sequence_length: 70
+  start_date: '2020-01-01'
+  symbol: TSLA
+  test_samples: 179
+  train_samples: 828
+  val_samples: 177
+feature_names:
+- Close
+- Open
+- High
+- Low
+- Adj Close
+- Returns
+- MA_5
+- MA_20
+- MA_50
+- RSI
+- Volatility_20d
+- Volume_MA_20
+- Volume_Ratio
+- Daily_Range_Pct
+- Delivery_Growth_YoY
+- Production_Beat_Score
+- Earnings_Season
+- Margin_Trend_3m
+- Delivery_Surprise
+- Short_Interest_Proxy
+- Retail_Sentiment_5d
+- Volume_Spike_Ratio
+- Fear_Greed_Score
+- New_EV_Models_Proxy
+- BYD_Growth_Proxy
+- EV_Tax_Credit_Active
+- China_Tariff_Level
+- FSD_Regulatory_Score
+- Policy_Uncertainty_Index
+- Volatility_20
+- Momentum_20
+- MACD
+- Log_Returns
+- ATR
+metrics:
+  test:
+    Dataset: Teste
+    Dir. Accuracy (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - &id001 !!python/object/apply:numpy.dtype
+      args:
+      - f8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - !!binary |
+      9aMf/ehHSUA=
+    MAE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      wEYHU0l7MEA=
+    MAPE (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      /AEpHr8RE0A=
+    RMSE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      5A4jRchYNEA=
+    "R\xB2 Score": !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      q+8xzrP47D8=
+  train:
+    Dataset: Treino
+    Dir. Accuracy (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      TFdSgmH/SUA=
+    MAE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      03HdbAQ3JUA=
+    MAPE (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      1ckv78xnEkA=
+    RMSE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      ylrHK4PvK0A=
+    "R\xB2 Score": !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      sh3H1T8Z7j8=
+  validation:
+    Dataset: "Valida\xE7\xE3o"
+    Dir. Accuracy (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      u+iiiy7aSUA=
+    MAE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      cqBbK6L3OEA=
+    MAPE (%): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      0bR1uf68IEA=
+    RMSE ($): !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      Lf47RyC9QEA=
+    "R\xB2 Score": !!python/object/apply:numpy.core.multiarray.scalar
+    - *id001
+    - !!binary |
+      JOt9PZ4H6j8=
+model_config:
+  batch_size: 32
+  dense_units: 32
+  dropout_rate: 0.28
+  early_stop_patience: 30
+  epochs: 150
+  learning_rate: 0.0005
+  lstm_units:
+  - 160
+  - 80
+  reduce_lr_patience: 15
+  regularization_l2: 0.001
+  sequence_length: 70
+  train_ratio: 0.7
+  val_ratio: 0.15
+training_info:
+  best_val_loss: 0.00889965333044529
+  epochs_trained: 150
+  final_train_loss: 0.0034050564281642437
+  final_val_loss: 0.00889965333044529
+  timestamp: '20260101_224540'

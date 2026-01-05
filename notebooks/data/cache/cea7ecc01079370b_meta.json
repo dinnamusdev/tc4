@@ -1,0 +1,22 @@
+{
+  "symbol": "^VIX",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:26:59.570937",
+  "rows": 1505,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "7013840391c99d3a73cd6dd90ac93d79",
+  "file_size_mb": 0.08037567138671875,
+  "date_range": {
+    "first": "2020-01-02T08:00:00",
+    "last": "2025-12-26T08:00:00"
+  },
+  "data_source": "realistic_generated"
+}

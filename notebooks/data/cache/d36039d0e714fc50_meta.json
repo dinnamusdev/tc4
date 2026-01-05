@@ -1,0 +1,22 @@
+{
+  "symbol": "TSLA",
+  "start_date": "2020-01-01",
+  "end_date": "2025-12-31",
+  "downloaded_at": "2025-12-29T21:53:11.259837",
+  "rows": 1506,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "5ab2778c6838c35725aee4672eb39fc7",
+  "file_size_mb": 0.0804290771484375,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-29T21:00:01"
+  },
+  "data_source": "realistic_generated"
+}

@@ -1,0 +1,22 @@
+{
+  "symbol": "LCID",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:27:02.466052",
+  "rows": 1325,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "f65dd887da9dcb08a183e48b955ee5d8",
+  "file_size_mb": 0.07076263427734375,
+  "date_range": {
+    "first": "2020-09-18T13:30:00",
+    "last": "2025-12-26T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

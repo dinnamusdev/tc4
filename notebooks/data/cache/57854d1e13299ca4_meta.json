@@ -1,0 +1,22 @@
+{
+  "symbol": "^GSPC",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:26:56.574304",
+  "rows": 1505,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "f7826a683bc3e46a74eb7718a3e66ca7",
+  "file_size_mb": 0.08037567138671875,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-26T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}

@@ -1,0 +1,94 @@
+# Configuração do Modelo LSTM com Features Modulares
+model:
+  name: "tesla_lstm_predictor"
+  version: "2.0.0"
+  
+  # Configurações de treinamento
+  training:
+    sequence_length: 60
+    train_split: 0.7
+    val_split: 0.15
+    test_split: 0.15
+    epochs: 100
+    batch_size: 32
+    learning_rate: 0.001
+    
+  # Arquitetura LSTM
+  architecture:
+    lstm_layers: [100, 50]
+    dropout_rate: 0.2
+    dense_units: 25
+    activation: "relu"
+    output_activation: "linear"
+    
+  # Features configuraveis
+  features:
+    # Grupo 1: Core (sempre ativo)
+    core:
+      enabled: true
+      features:
+        - "Open"
+        - "High"
+        - "Low"
+        - "Close"
+        - "Volume"
+        - "Returns"
+        - "MA_20"
+        - "RSI"
+        - "Volatility_20d"
+        
+    # Grupo 2: Execution Features (Fator 1)
+    execution:
+      enabled: true
+      priority: 1
+      features:
+        - "Delivery_Growth_YoY"      # Impacto: -5.96%
+        - "Delivery_Surprise"         # Impacto: -3.94%
+        - "Production_Beat_Score"     # Impacto: -1.16%
+        
+    # Grupo 3: Sentiment Features (Fator 2)
+    sentiment:
+      enabled: true
+      priority: 2
+      features:
+        - "Retail_Sentiment_5d"
+        - "Fear_Greed_Score"          # Impacto: -0.59% (crítico para estabilidade)
+        
+    # Grupo 4: Macro Features (Fator 3)
+    macro:
+      enabled: true
+      priority: 3
+      features:
+        - "Inflation_Rate_YoY"
+        - "Interest_Rate_US"
+        
+    # Grupo 5: Competition Features (Fator 4)
+    competition:
+      enabled: true
+      priority: 4
+      features:
+        - "BYD_Growth_Proxy"          # Impacto: -0.38% (crítico para ensemble)
+        - "New_EV_Models_Proxy"       # Impacto: -0.04% (crítico para contexto)
+        
+    # Grupo 6: Policy Features (Fator 5)
+    policy:
+      enabled: true
+      priority: 5
+      features:
+        - "EV_Incentive_Index"
+        - "Short_Interest_Proxy"      # Impacto: -0.02% (crítico para diversidade)
+        
+  # Ordem de aplicação (por prioridade)
+  feature_priority_order:
+    - "core"
+    - "execution"
+    - "sentiment"
+    - "macro"
+    - "competition"
+    - "policy"
+
+extensibility:
+  allow_dynamic_features: true
+  feature_validation: true
+  auto_retrain_on_update: false
+  feature_importance_tracking: true

@@ -1,0 +1,22 @@
+{
+  "symbol": "IDRV",
+  "start_date": "2020-01-02",
+  "end_date": "2025-12-29",
+  "downloaded_at": "2026-01-05T10:27:04.896690",
+  "rows": 1505,
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Adj Close"
+  ],
+  "data_hash": "c720eb1bd96ec56c7a0bebdc887e5e09",
+  "file_size_mb": 0.08037567138671875,
+  "date_range": {
+    "first": "2020-01-02T14:30:00",
+    "last": "2025-12-26T14:30:00"
+  },
+  "data_source": "realistic_generated"
+}
